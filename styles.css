@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.calculator {
+    width: 400px; /* Increased size */
+    background-color: #333;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+    width: 100%;
+    height: 80px; /* Increased height */
+    background-color: #222;
+    color: #fff;
+    border: none;
+    text-align: right;
+    font-size: 40px; /* Increased font size */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; /* More space between buttons */
+}
+
+button {
+    width: 100%;
+    padding: 25px; /* Increased button size */
+    font-size: 24px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #666;
+}
+
+button.span-two {
+    grid-column: span 2;
+}
+
+button.operator {
+    background-color: #ff5722; /* Changed color for operators */
+    color: white;
+}
+
+button.operator:hover {
+    background-color: #e64a19;
+}
